@@ -155,13 +155,39 @@ main {
 }
 
 #circle-cover-bg {
-    background: url(../images/reasons-image.webp) center top/cover no-repeat;
+    background: url('../images/reasons-image.webp') center top/cover no-repeat;
     width: 90vw;
     height: 90vw;
     border-radius: 50%;
     margin-bottom: 20px;
     max-width: 300px;
     max-height: 300px;
+}
+
+/* Meet-up section */
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without needs for a media query */
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400pxwide.
+    Each div will expand to fill to available space on its row */
+    flex-grow: 1;
+    min-width: 200px;
+    /* Create a grid of meetup time divsover the background image */
+    border: 1px solid white;
+} 
+
+#times h3 {
+    /* override the heading color set in general style  */
+    color: #fafafa;
 }
 
 /* Footer */
