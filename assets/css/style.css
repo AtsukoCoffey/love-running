@@ -145,6 +145,22 @@ main {
     padding: 0 20px;
 }
 
+#benefits-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) center top/cover no-repeat;
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
 /* Footer */
 #social-networks {
     text-align:center;
